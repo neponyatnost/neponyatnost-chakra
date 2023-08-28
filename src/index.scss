@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  list-style: none;
+}
+
+body {
+}
+
+input[type='text'] {
+  background-color: rgba(0, 128, 128, 0.5);
+}

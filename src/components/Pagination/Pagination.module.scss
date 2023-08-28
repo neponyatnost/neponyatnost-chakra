@@ -1,0 +1,70 @@
+.pagination {
+  font-weight: 500;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 599.99px) {
+    font-weight: 400;
+    gap: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+.pageItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageLink {
+  // padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  background-color: teal;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.1s ease-out;
+
+  &:hover {
+    background-color: #fff;
+    color: teal;
+    outline: 1px solid teal;
+  }
+
+  &:active {
+    border-radius: 50%;
+    background-color: teal;
+    color: #fff;
+    outline: 1px solid #fff;
+  }
+  @media (max-width: 599.99px) {
+    border-radius: 0;
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.pageLinkActive {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  @media (max-width: 599.99px) {
+    border-radius: 0;
+    width: 3rem;
+    height: 3rem;
+  }
+  background-color: #fff;
+  outline: 2px solid teal;
+  color: teal;
+}
